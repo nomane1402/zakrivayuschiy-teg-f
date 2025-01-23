@@ -6,4 +6,6 @@
     --main-weight: 400;
     --card-title-weight: 700;
     --section-width: clamp(375px, 700px, 700px);
+    --cards-list-width: clamp(375px, 696px, 696px);
+    --background-gradient: repeating-linear-gradient(to right,#d3d3d3 2px, transparent 2px);
 }

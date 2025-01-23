@@ -15,6 +15,23 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: var(--main-weight);
+  /* background-image: var(--background-gradient); */
+  background-image: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0px 2px,
+    transparent 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0px 2px,
+    transparent 2px 4px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    #e7e7e7 0.01%,
+    #1a1a1a 100%
+  );
+  background-size: cover;
 }
 
 .header {
@@ -43,6 +60,37 @@
   padding: 20px 175px 128px;
 }
 
+.main {
+  display: flex;
+}
+
+.cards-list {
+  width: var(--cards-list-width);
+  margin-inline-start: 372px;
+  margin-inline-end: 372px;
+}
+
+.cards-list-item {
+  border: 2px solid #000;
+}
+
+.card-title {
+  line-height: 21.78px;
+}
+
+.card-image {
+  width: 694px;
+}
+
+.card-text {
+  margin: 25px 25px 88px;
+}
+
+.card-text-comment {
+  margin-block-start: 27px;
+}
+
+/* Настройки для мобилки */
 @media (max-width: 375px) {
   header{
     width: 100vw;
