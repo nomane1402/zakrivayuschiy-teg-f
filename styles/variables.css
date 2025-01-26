@@ -5,7 +5,22 @@
     --accent-font: 'PressStart2P-Regular';
     --main-weight: 400;
     --card-title-weight: 700;
-    --section-width: clamp(375px, 700px, 700px);
-    --cards-list-width: clamp(375px, 696px, 696px);
-    --background-gradient: repeating-linear-gradient(to right,#d3d3d3 2px, transparent 2px);
+    --section-width: clamp(375px, 4806vw, 700px);
+    --cards-list-width: clamp(375px, 48.3vw, 696px);
+    --background-gradient: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #e7e7e7 0.01%,
+        #1a1a1a 100%
+      );
+    --flex-width: clamp(375px, 48.5vw, 700px);
 }
