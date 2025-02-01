@@ -22,5 +22,11 @@
         #e7e7e7 0.01%,
         #1a1a1a 100%
       );
-    --flex-width: clamp(375px, 48.5vw, 700px);
+    /* --flex-width: clamp(375px, 48.5vw, 700px); */
+    --flex-width-header: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+    --flex-width-main: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+    --font-color: #fff;
+    --contour-color: #000;
+    --sparks-color: red;
+    --accent-color: #000;
 }
