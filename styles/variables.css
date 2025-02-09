@@ -27,6 +27,6 @@
     --flex-width-main: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
     --font-color: #fff;
     --contour-color: #000;
-    --sparks-color: red;
-    --accent-color: #000;
+    /* --sparks-color: red; */
+    --fill-color: #f00;
 }
