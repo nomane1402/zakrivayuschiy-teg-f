@@ -11,7 +11,7 @@
 */
 
 .page {
-  min-inline-size: 320px;
+  min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: var(--main-weight);
@@ -25,7 +25,7 @@
   border: 2px solid #000;
   margin: 101px clamp(0rem, 34.742vw - 8.143rem, 23.125rem);
   background-color: #fff;
-  min-width: 375px;
+  /* min-width: 375px; */
 }
 
 .flex-width-header {
@@ -80,31 +80,31 @@
   height: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
 }
 
-.cards-list-item:nth-child(2) .card-image {
+.blur {
   filter: blur(0.15rem);
 }
 
-.cards-list-item:nth-child(3) .card-image {
+.sepia {
   filter: sepia(50%)
 }
 
-.cards-list-item:nth-child(4) .card-image {
+.contrast {
   filter: contrast(124%);
 }
 
-.cards-list-item:nth-child(5) .card-image {
+.grayscale {
   filter: grayscale(75%);
 }
 
-.cards-list-item:nth-child(6) .card-image {
+.saturate-contrast {
   filter: saturate(175%) contrast(1.5);
 }
 
-.cards-list-item:nth-child(7) .card-image {
+.hue-rotate {
   filter: hue-rotate(67deg);
 }
 
-.cards-list-item:nth-child(8) .card-image {
+.invert {
   filter: invert(88%);
 }
 
@@ -274,23 +274,6 @@
 .like-icon.is-liked .contour {
   fill: var(--fill-color);
   transition: fill 0.3s 0.06s;
-}
-
-@keyframes heart-beat {
-  from {
-    /* scale: 1; */
-    transform: scale(1);
-  }
-  to {
-    /* scale: 1.25; */
-    transform: scale(1.25);
-  }
-}
-
-@keyframes heart-sparks {
-  to {
-    opacity: 1;
-  }
 }
 
 .like-icon.is-liked .heart {

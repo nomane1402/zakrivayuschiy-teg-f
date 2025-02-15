@@ -7,7 +7,7 @@
     <!-- Title + Favicon -->
     <title>Закрывающий тег</title>
     <link rel="icon" href="svg/favicon.svg" type="image/svg+xml" />
-    <link rel="mobile-icon" href="images/mobile-icon.png" />
+    <link rel="apple-touch-icon" href="images/mobile-icon.png" />
     <!-- Styles -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -16,36 +16,37 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header flex-width-header">
+    <header class="header flexible-block">
       <h1 class="logo">&lt;/HTML&gt;</h1>
-      <h2 class="title">закрывающий тег</h2>
+      <p class="title">закрывающий тег</p>
     </header>
     <main>
-      <ul class="cards-list flex-width-main">
+      <ul class="cards-list flexible-block">
         <li class="cards-list-item">
-          <h3 class="card-title">
+          <h2 class="card-title">
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
+          </h2>
           <div class="image-block">
             <span class="image-label">&lt;/HTML&gt;</span>
-            <img class="card-image" src="./images/photo_8.jpg" />
+            <img class="card-image" src="./images/photo_8.jpg" alt="Закат" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               Это было самое начало пути. На этом этапе важно было проникнуться
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Сначала я думал, что будет легко и не строил больших ожиданий.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -72,22 +73,19 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">1 спринт: Я — чистый лист</h3>
+          <h2 class="card-title">1 спринт: Я — чистый лист</h2>
           <div class="image-block">
             <span class="image-label">&lt;/HTML&gt;</span>
-            <img class="card-image" src="./images/photo_1.jpg" />
+            <img class="card-image blur" src="./images/photo_1.jpg" alt="Небо с облаками" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               На первых этапах мы работали со страхами и сомнениями, которые
               часто испытывают новички. Один из них — страх перед чистым листом.
@@ -95,17 +93,18 @@
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Первый спринт меня вдохновил, я наконец-то понял в чем можно найти
               себя.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -132,39 +131,37 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">1 спринт: А если не получится?</h3>
+          <h2 class="card-title">1 спринт: А если не получится?</h2>
           <div class="image-block">
             <span class="image-label">&lt;css&gt;</span>
-            <img class="card-image" src="./images/photo_2.jpg" />
+            <img class="card-image sepia" src="./images/photo_2.jpg" alt="Второй закат" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Мое ожидание легкости рассыпалось. Я осознал, что много ошибаюсь и
               сразу сделать идеально невозможно. Нужно набивать синяки, вставать
               и идти дальше.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -191,22 +188,19 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">2 спринт: Погоня за идеалом</h3>
+          <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
           <div class="image-block">
             <span class="image-label">&lt;desigions&gt;</span>
-            <img class="card-image" src="./images/photo_3.jpg" />
+            <img class="card-image contrast" src="./images/photo_3.jpg" alt="Дракон в неоне" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               На этом этапе вы уже достаточно разбирались в основах вёрстки,
               чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
@@ -214,17 +208,18 @@
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Второй спринт прошел как по маслу. Было интересно и теория очень
               быстро усваивалась у меня в голове.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -251,22 +246,19 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">2 спринт: О тех, кто рядом</h3>
+          <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
           <div class="image-block">
             <span class="image-label">care</span>
-            <img class="card-image" src="./images/photo_4.jpg" />
+            <img class="card-image grayscale" src="./images/photo_4.jpg" alt="Окутанное туманом море" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               Всё это время вы были не одиноки (хотя, возможно, иногда и
               чувствовали, что одни против целого мира). Вас окружали
@@ -275,18 +267,19 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Самый быстрый и легкий спринт. Пришлось исправить всего несколько
               ошибок, получилось сдать ПР со второго раза. Возможно я себя в тот
               момент чересчур перехвалил..
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -313,40 +306,38 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" lass="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">3 спринт: Обходные стратегии</h3>
+          <h2 class="card-title">3 спринт: Обходные стратегии</h2>
           <div class="image-block">
             <span class="image-label">&lt;support&gt;</span>
-            <img class="card-image" src="./images/photo_5.jpg" />
+            <img class="card-image saturate-contrast" src="./images/photo_5.jpg" alt="Горящее сердце" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               От третьего спринта я был в гневе. Очень много писал в поддержку о
               корявом тренажере. Параллельно с этим начались проблемы на текущем
               месте работы. Сил, как физических, так и моральных на занятия
               практически не оставалось. Перевелся в другую кагорту.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -373,22 +364,19 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">3 спринт: Когда опускаются руки</h3>
+          <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
           <div class="image-block">
             <span class="image-label">&lt;lifes-style: none;&gt;</span>
-            <img class="card-image" src="./images/photo_6.jpg" />
+            <img class="card-image hue-rotate" src="./images/photo_6.jpg" alt="Мем с котом" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               Во время учёбы часто возникает чувство, когда не знаешь, за что
               хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -396,18 +384,19 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Скинул камень с плеч. Сдал наконец-то третью ПР и не торопясь
               приступил к 4 спринту. Концетрироваться мне помогала смена
               деятельности (особенно спортзал) и медитация.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -434,22 +423,19 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
         <li class="cards-list-item">
-          <h3 class="card-title">«Сейчас я здесь»</h3>
+          <h2 class="card-title">«Сейчас я здесь»</h2>
           <div class="image-block">
             <span class="image-label">&lt;experience&gt;</span>
-            <img class="card-image" src="./images/photo_7.jpg" />
+            <img class="card-image invert" src="./images/photo_7.jpg" alt="Надпись Real" loading="lazy"/>
           </div>
-          <section class="card-text">
+          <div class="card-text">
             <p class="card-text-description">
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
               Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
@@ -458,7 +444,7 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p class="card-text-comment">
+            <p class="card-text-description">
               Меня посещают полярные мысли. С одной стороны хочется дать себе
               время, приостановить обучение и разгрести комок мыслей в голове, а
               с другой не хочу останавливаться в изучении Фронтенда. Стоит
@@ -468,13 +454,14 @@
               теорию, составить партфолио и в конце концов придти к той
               профессиональной деятельности, о которой я мечтал.
             </p>
-          </section>
-          <section class="buttons">
-            <button class="card__icon-button">
+          </div>
+          <div class="buttons">
+            <button type="button" aria-label="Кнопка с иконкой сердца" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="transparent"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -501,17 +488,14 @@
                   d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"
                 />
               </svg>
-              <!-- <svg class="like-icon" xmlns="http://www.w3.org/2000/svg">
-                  <use class="heart" xlink:href="#heart-frame-1"/>
-                </svg> -->
             </button>
-            <button class="button card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text">Like</span>
             </button>
-          </section>
+          </div>
         </li>
       </ul>
-      <button class="button save-button" onclick="window['save'].showModal();">
+      <button type="button" class="button save-button" onclick="window['save'].showModal();">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 21 21"
@@ -532,7 +516,7 @@
           </svg>
           <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="ok-button" onclick="window['save'].close()">ок</button>
+        <button type="button" class="ok-button" onclick="window['save'].close()">ок</button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
@@ -545,23 +529,10 @@
   viewBox="0 0 40 40"
   style="display: none"
 >
-  <symbol id="floppy-1">
+  <!-- <symbol id="floppy-1">
     <path
       fill="#000"
       d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"
     />
-  </symbol>
-</svg>
-
-<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="transparent" viewBox="0 0 39 36" class="like-icon" style="display: none;">
-  <symbol id="heart-frame-1">
-    <g class="heart-svg">
-        <path class="contour" fill="var(--contour-color)" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
-
-        <path class="main-body" fill="transparent" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z"/>
-
-        <path class="core" fill="transparent" d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z"/>
-    </g>
-    <path class="sparks" fill="var(--sparks-color)" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
   </symbol>
 </svg> -->
