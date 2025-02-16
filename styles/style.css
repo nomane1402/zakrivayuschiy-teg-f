@@ -133,7 +133,7 @@
   }
 } */
 
-@supports (-webkit-text-stroke: 1px #fff;) {
+@supports (-webkit-text-stroke: 1px #fff) {
   .image-label {
     -webkit-text-stroke: 1px #fff;
   }
