@@ -1,10 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font: 'Inter-Variable';
-    --accent-font: 'PressStart2P-Regular';
-    --main-weight: 400;
-    --card-title-weight: 700;
+    --main-font: 'Inter-Variable', sans-serif;
+    --accent-font: 'PressStart2P', fantasy;
+    --main-font-settings: "wght" 400;
+    --card-font-settings: "wght" 700;
     --section-width: clamp(375px, 4806vw, 700px);
     --cards-list-width: clamp(375px, 48.3vw, 696px);
     --background-gradient: repeating-linear-gradient(
