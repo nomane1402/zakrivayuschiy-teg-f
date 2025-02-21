@@ -7,7 +7,8 @@
     --card-font-settings: "wght" 700;
     --section-width: clamp(375px, 4806vw, 700px);
     --cards-list-width: clamp(375px, 48.3vw, 696px);
-    --background-gradient: repeating-linear-gradient(
+    --background-gradient: 
+      repeating-linear-gradient(
         to right,
         #d3d3d3 0px 2px,
         transparent 2px 4px
@@ -17,16 +18,15 @@
         #d3d3d3 0px 2px,
         transparent 2px 4px
       ),
-      repeating-linear-gradient(
+      linear-gradient(
         to bottom,
         #e7e7e7 0.01%,
         #1a1a1a 100%
       );
-    /* --flex-width: clamp(375px, 48.5vw, 700px); */
-    --flex-width-header: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
-    --flex-width-main: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem);
+    --flex-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    /* --flex-width-header: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
+    --flex-width-main: clamp(23.438rem, 30.141vw + 16.373rem, 43.5rem); */
     --font-color: #fff;
     --contour-color: #000;
-    /* --sparks-color: red; */
     --fill-color: #f00;
 }
