@@ -374,6 +374,10 @@
   transition: 0.5s;
 }
 
+.ok-button:hover {
+  cursor: pointer;
+}
+
 @media (width <= 375.2px) {
 
   
