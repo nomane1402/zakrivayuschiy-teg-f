@@ -150,6 +150,10 @@
   max-width: 646px;
 }
 
+.card-text-description:first-child {
+  margin-block-end: 27px;
+}
+
 .card-text-comment {
   margin-block-start: 27px;
 }
