@@ -191,7 +191,7 @@
   transition: 0.5s;
 }
 
-.button:focus{
+.button:focus {
   outline: none;
 }
 
