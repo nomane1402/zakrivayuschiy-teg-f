@@ -3,8 +3,8 @@
 :root {
     --main-font: 'Inter-Variable', sans-serif;
     --accent-font: 'PressStart2P', fantasy;
-    --main-font-settings: "wght" 400;
-    --card-font-settings: "wght" 700;
+    --main-font-settings: 400;
+    --card-font-settings: 700;
     --section-width: clamp(375px, 4806vw, 700px);
     --cards-list-width: clamp(375px, 48.3vw, 696px);
     --background-gradient: 

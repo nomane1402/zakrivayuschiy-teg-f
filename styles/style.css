@@ -14,8 +14,7 @@
   min-inline-size: 375px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  /* font-variation-settings: var(--main-font-settings); */
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--main-font-settings);
   background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
@@ -25,9 +24,10 @@
 .header {
   font-family: var(--accent-font);
   border: 2px solid #000;
-  margin: 101px clamp(0rem, 34.742vw - 8.143rem, 23.125rem);
+  /* margin: 101px clamp(0rem, 34.742vw - 8.143rem, 23.125rem); */
   background-color: #fff;
-  /* min-width: 375px; */
+  margin-inline: auto;
+  margin-block: 101px;
 }
 
 .flexible-block {
@@ -47,8 +47,10 @@
 }
 
 .cards-list {
-  margin: 0 clamp(0rem, 34.93vw - 8.187rem, 23.25rem) 50px;
+  /* margin: 0 clamp(0rem, 34.93vw - 8.187rem, 23.25rem) 50px; */
   min-inline-size: 375px;
+  margin-inline: auto;
+  margin-block: 0 50px;
 }
 
 .cards-list-item {
@@ -59,8 +61,7 @@
 .card-title {
   /* padding: clamp(0.188rem, 0.094vw + 0.165rem, 0.25rem) clamp(0.688rem, -0.188vw + 0.732rem, 0.563rem) 6px; */
   padding: 4px 9px;
-  /* font-variation-settings: var(--card-font-settings); */
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" var(--card-font-settings);
   font-size: 18px;
 }
 
@@ -96,7 +97,7 @@
   line-height: 14px;
   opacity: 50%;
   z-index: 1;
-  /* text-shadow: 1px 1px #fff;  Не понимаю зачем удалять тень, если она здесь используется как фолбек*/
+  text-shadow: 1px 1px #fff;
 }
 
 .blur {
@@ -136,6 +137,7 @@
 @supports (-webkit-text-stroke: 1px #fff) {
   .image-label {
     -webkit-text-stroke: 1px #fff;
+    text-shadow: none;
   }
 }
 
@@ -331,7 +333,9 @@
   border: 2px solid #000;
   width: 337px;
   height: 51px;
-  margin: 0 clamp(2.125rem, 48.638vw - 9.275rem, 34.5rem) 105px;
+  /* margin: 0 clamp(2.125rem, 48.638vw - 9.275rem, 34.5rem) 105px; */
+  margin-inline: auto;
+  margin-block: 0 105px;
   gap: 8px;
   padding: 15px 20px 15px 18px;
   transition: 0.5s;
@@ -375,7 +379,7 @@
   border: 2px solid #000;
   width: 100%;
   height: 38px;
-  padding: 12.5px 132.5px;
+  /* padding: 12.5px 132.5px; */
   line-height: 12.6px;
   font-size: 14px;
   overflow: hidden;
@@ -429,7 +433,7 @@
     scale: 1.3333;
   } 
 
-  /* .card-title {
+  /* .card-suitle {
     padding: 3px 11px;
   }
 
