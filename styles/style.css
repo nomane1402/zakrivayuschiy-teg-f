@@ -408,7 +408,7 @@
 
   .save-button {
     display: grid;
-    margin-inline: 34.5px;
+    /* margin-inline: 34.5px; */
     margin-block-start: 50px;
     margin-block-end: 100px;
     padding: 15px 19px 15px 18px;
