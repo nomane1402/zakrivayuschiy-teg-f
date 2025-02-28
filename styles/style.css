@@ -230,6 +230,7 @@
   padding-block-start: 4px;
   z-index: 1;
   mix-blend-mode: difference;
+  width: 266px;
 }
 
 .like-icon {
